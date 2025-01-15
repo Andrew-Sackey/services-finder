@@ -1,0 +1,19 @@
+import express from "express";
+import cors from "cors";
+import mongoose from "mongoose";
+
+// connect to the database
+
+// create the express app
+const app = express();
+
+// use middlewares here
+app.use(express.json());
+app.use(cors());
+
+// Routes will be used here
+
+// listen for incoming requests
+app.listen(3050, () => {
+    console.log("App is listening on port 3050")
+});
