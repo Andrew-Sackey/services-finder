@@ -99,7 +99,7 @@ export const updateUserProfile = async (req, res, next) => {
         return res.status(404).json('User not found')
     }
     // return response
-     res.jsom('User profile updated')
+     res.json('User profile updated')
    } catch (error) {
     next(error);
    }
